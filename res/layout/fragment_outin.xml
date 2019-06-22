@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/ll_outin"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/outin_ll_top_bg"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bg_outin_in"
+                style="@style/topbg_in"
+                android:text="@string/outin_bgin" />
+
+            <Button
+                android:id="@+id/bg_outin_out"
+                style="@style/topbg_out"
+                android:text="@string/outin_bgout" />
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <View
+        android:id="@+id/outin_divline"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/title_bar"
+        android:background="@color/blue" />
+    
+    <FrameLayout
+        android:id="@+id/fl_outin_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/outin_divline" >
+        
+    </FrameLayout>
+
+</RelativeLayout>

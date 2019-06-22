@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/ly_query_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_outindetails"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/warehouse_tab_menu_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/main_query_outindetails"
+            android:textColor="@drawable/warehouse_tab_menu_text"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/txt_outinsummary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/warehouse_tab_menu_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/main_query_outinsummary"
+            android:textColor="@drawable/warehouse_tab_menu_text"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/txt_inboundsta"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/warehouse_tab_menu_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/main_query_inboundsta"
+            android:textColor="@drawable/warehouse_tab_menu_text"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/txt_outboundsta"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/warehouse_tab_menu_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/main_query_outboundsta"
+            android:textColor="@drawable/warehouse_tab_menu_text"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/ly_query_tab_bar"
+        android:background="@color/gray" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpager2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/div_tab_bar" />
+
+</RelativeLayout>

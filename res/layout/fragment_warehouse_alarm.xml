@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/warehouse_alarm_message"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_10" />
+
+    <View
+        android:id="@+id/line_above_warehouse_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/warehouse_alarm_message"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/warehouse_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/line_above_warehouse_alarm"
+        android:background="@color/blue"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/warehouse_alarm_t1"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/main_outin_inboundorder_itemID" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="#ffffff" />
+
+        <TextView
+            android:id="@+id/warehouse_alarm_t2"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/main_outin_pcorder_itemName" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="#ffffff" />
+
+        <TextView
+            android:id="@+id/warehouse_alarm_t3"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/main_warehouse_check_count1" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="#ffffff" />
+
+        <TextView
+            android:id="@+id/warehouse_alarm_t4"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/main_warehouse_alarm_reason" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_below_warehouse_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/warehouse_alarm"
+        android:background="@color/white" />
+
+    <ListView
+        android:id="@+id/warehouse_alarm_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_below_warehouse_alarm" >
+    </ListView>
+
+</RelativeLayout>

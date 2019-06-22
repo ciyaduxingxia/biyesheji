@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<litepal>
+    <dbname value="wms"></dbname>
+    <version value="11"></version>
+    
+    <list>
+        <mapping class="com.example.dbtable.User"></mapping>
+        <mapping class="com.example.dbtable.Dept"></mapping>
+        <mapping class="com.example.dbtable.Picker"></mapping>
+        <mapping class="com.example.dbtable.Supply"></mapping>
+        <mapping class="com.example.dbtable.Item"></mapping>
+        <mapping class="com.example.dbtable.PurchaseOrder"></mapping>
+        <mapping class="com.example.dbtable.InboundOrder"></mapping>
+        <mapping class="com.example.dbtable.PickOrder"></mapping>
+        <mapping class="com.example.dbtable.OutboundOrder"></mapping>
+        <mapping class="com.example.dbtable.PermissionRequest"></mapping>
+        <mapping class="com.example.dbtable.PermissionSet"></mapping>
+        <mapping class="com.example.dbtable.CheckInfo"></mapping>
+    </list>
+    
+</litepal>

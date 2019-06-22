@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/rl_meother_userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/iv_meother_userinfo_arrow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/iv_meother_userinfo_arrow_back"
+            android:text="@string/main_me_uesrinfo"
+            android:textSize="24sp" />
+    </RelativeLayout>
+    
+    <View
+        android:id="@+id/div_tab_bar1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/meother_username"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/main_me_uesrinfo_username" />
+        
+        <TextView
+            android:id="@+id/tv_meother_username"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="@string/main_me_uesrinfo_username" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/meother_usertype"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"	
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/main_me_uesrinfo_usertype" />
+        
+        <TextView
+            android:id="@+id/tv_meother_usertype"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="@string/main_me_uesrinfo_usertype" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/meother_userid"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"	
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/main_me_uesrinfo_userid" />
+        
+        <TextView
+            android:id="@+id/tv_meother_userid"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="@string/main_me_uesrinfo_userid" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/meother_permission"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"	
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/main_me_uesrinfo_permission" />
+        
+        <TextView
+            android:id="@+id/tv_meother_permission"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="@string/main_me_uesrinfo_permission" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/meother_phone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"	
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/main_me_uesrinfo_phone" />
+        
+        <TextView
+            android:id="@+id/tv_meother_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="@string/main_me_uesrinfo_phone" />
+    </RelativeLayout>
+    
+    <Button
+            android:id="@+id/bt_meother_deluser_submit"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/bg_login_submit"
+            android:text="@string/main_meother_usermanage_deluser"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_18" />
+    
+    <Button
+            android:id="@+id/bt_meother_edituser_submit"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/bg_login_submit"
+            android:text="@string/main_meother_usermanage_edituser"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_18" />
+
+</LinearLayout>

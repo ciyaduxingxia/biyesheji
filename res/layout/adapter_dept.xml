@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<LinearLayout
+        android:id="@+id/ll_adapter2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/d_t1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="#ffffff" />
+
+        <TextView
+            android:id="@+id/d_t2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="#ffffff" />
+
+        <TextView
+            android:id="@+id/d_t3"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ll_adapter2"
+        android:background="#ffffff" />
+    
+</RelativeLayout>

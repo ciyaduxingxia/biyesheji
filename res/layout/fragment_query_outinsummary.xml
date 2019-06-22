@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/query_summary_datemessage"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="@string/main_query_details_datemessage"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/ll_summary_date"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/query_summary_datemessage"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_summary_startdate"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:hint="@string/main_query_details_startdate"
+            android:inputType="date"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="25dp"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <EditText
+            android:id="@+id/et_summary_enddate"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:hint="@string/main_query_details_enddate"
+            android:inputType="date"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_summary_type"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/ll_summary_date"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/sp_summary_type"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/transparent"
+            android:spinnerMode="dropdown"
+            android:textSize="12sp" />
+        
+        <Spinner
+            android:id="@+id/sp_summary_ID"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="37dp"
+            android:background="@color/transparent"
+            android:spinnerMode="dropdown"
+            android:textSize="12sp" />
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/bg_query_summary_summit"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/ll_summary_type"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_login_submit"
+        android:gravity="center"
+        android:text="@string/main_warehouse_inquiry_sel"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16" />
+
+    <View
+        android:id="@+id/line_above_query_summary"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/bg_query_summary_summit"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" />
+    
+    <LinearLayout
+        android:id="@+id/query_summary"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/line_above_query_summary"
+        android:background="@color/blue"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/query_summary_t1"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/main_query_details_count6" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="#ffffff" />
+
+        <TextView
+            android:id="@+id/query_summary_t2"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/main_query_details_count3" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="#ffffff" />
+
+        <TextView
+            android:id="@+id/query_summary_t3"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/main_query_details_count4" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="#ffffff" />
+
+        <TextView
+            android:id="@+id/query_summary_t4"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/main_query_details_count7" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="#ffffff" />
+
+        <TextView
+            android:id="@+id/query_summary_t5"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/main_query_details_count8" />
+    </LinearLayout>
+    
+    <View
+        android:id="@+id/line_below_query_summary"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/query_summary"
+        android:background="@color/white" />
+
+    <ListView
+        android:id="@+id/query_summary_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_below_query_summary" >
+    </ListView>
+    
+
+</RelativeLayout>

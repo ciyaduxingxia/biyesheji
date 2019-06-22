@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_adduser"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/iv_adduser_arrow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/adduser_edituser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@id/iv_adduser_arrow_back"
+            android:text="@string/main_meother_usermanage_adduser"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/div_tab_bar1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/meother_adduser_username"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/main_me_uesrinfo_username" />
+
+        <EditText
+            android:id="@+id/tv_meother_adduser_username"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:gravity="center"
+            android:hint="@string/main_me_uesrinfo_username1"
+            android:textSize="@dimen/font_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/meother_adduser_userpwd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/main_me_uesrinfo_userpwd" />
+
+        <EditText
+            android:id="@+id/tv_meother_adduser_userpwd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:gravity="center"
+            android:hint="@string/main_me_uesrinfo_userpwd1"
+            android:textSize="@dimen/font_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/meother_adduser_usertype"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/main_me_uesrinfo_usertype" />
+
+        <EditText
+            android:id="@+id/tv_meother_adduser_usertype"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:hint="@string/main_me_uesrinfo_usertype1"
+            android:textSize="@dimen/font_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/meother_adduser_userid"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/main_me_uesrinfo_userid" />
+
+        <EditText
+            android:id="@+id/tv_meother_adduser_userid"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:gravity="center"
+            android:hint="@string/main_me_uesrinfo_userid1"
+            android:textSize="@dimen/font_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/meother_adduser_permission"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/main_me_uesrinfo_permission" />
+
+        <EditText
+            android:id="@+id/tv_meother_adduser_permission"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:gravity="center"
+            android:hint="@string/main_me_uesrinfo_permission1"
+            android:textSize="@dimen/font_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/meother_adduser_phone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/main_me_uesrinfo_phone" />
+
+        <EditText
+            android:id="@+id/tv_meother_adduser_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:gravity="center"
+            android:hint="@string/main_me_uesrinfo_phone1"
+            android:textSize="@dimen/font_14" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_meother_adduser_submit"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_login_submit"
+        android:text="@string/main_outin_pcorder_submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_18" />
+
+</LinearLayout>

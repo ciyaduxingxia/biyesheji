@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wms"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="23" />
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.activity.WelcomeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="仓库管理系统"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.scan.zxing.android.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.activity.LoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="登录界面"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.example.activity.ForgetPwdActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="密码找回"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.example.activity.RegisterActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="注册"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.example.activity.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="仓库管理系统"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.example.basic.BasicSupplyActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="供应商信息管理"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.example.basic.BasicDeptActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="部门信息管理"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.example.basic.BasicPickerActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="取货员信息管理"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.example.basic.BasicItemActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="货物信息管理"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.example.outin.OutinInPcOrderActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="处理采购单"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.example.outin.OutinInPendingPcOrderActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="待处理采购单"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.example.outin.OutinInInboundActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="货物入库"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.example.outin.OutinInInboundOrderActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="填写入库单"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+
+        <receiver
+            android:name="com.example.outin.pcorderRefreshBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="action.refreshPcOrder" />
+                <action android:name="action.delPcOrder" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.example.outin.OutinPickorderActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="处理取货单"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+
+        <receiver
+            android:name="com.example.outin.pickorderRefreshBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="action.refreshPickOrder" />
+                <action android:name="action.delPickOrder" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.example.outin.OutinPendingPickOrderActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="待处理取货单"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.example.outin.OutinOutboundActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="货物出库"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.example.outin.OutinOutboundorderActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="填写出库单"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.example.me.UserInfo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="用户详细信息"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.example.me.EditPassword"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="修改密码"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.example.me.PermissionRequest"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="权限申请"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.example.me.PermissionSet"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="权限设置"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.example.me.UserManage"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="用户管理"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.example.me.AddUser"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="新增用户"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.example.me.UserInfoManage"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="用户详情"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+    </application>
+
+</manifest>

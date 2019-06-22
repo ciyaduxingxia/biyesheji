@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_inbound"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/iv_inbound_arrow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/iv_inbound_arrow_back"
+            android:text="@string/main_outin_iteminbound"
+            android:textSize="24sp" />
+        
+        <ImageView
+            android:id="@+id/iv_inbound_saoma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/saoma" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/div_tab_bar1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/rl_inbound"
+        android:background="@color/black" />
+
+    <Spinner
+        android:id="@+id/sp_in_inbound_itemID"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" 
+        android:layout_below="@id/div_tab_bar1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:id="@+id/et_in_inbound_itemName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/sp_in_inbound_itemID"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/main_outin_pcorder_itemName"
+        android:inputType="text" />
+    
+    <EditText
+        android:id="@+id/et_in_inbound_itemType"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/et_in_inbound_itemName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/main_outin_inboundorder_itemType"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/et_in_inbound_count"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/et_in_inbound_itemType"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/main_outin_pcorder_count"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/et_in_inbound_unit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/et_in_inbound_count"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/main_outin_pcorder_unit"
+        android:inputType="text" />
+
+    <Spinner
+        android:id="@+id/sp_in_inbound_location"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/et_in_inbound_unit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:id="@+id/et_in_inbound_price"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/sp_in_inbound_location"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/main_outin_pcorder_price"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/bg_in_inbound_summit"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/et_in_inbound_price"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="@drawable/bg_login_submit"
+        android:text="@string/main_outin_pcorder_submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16" />
+
+    <TextView
+        android:id="@+id/tv_in_pcorder_else"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/bg_in_inbound_summit"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/main_outin_pcorder_create" />
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_warehouse_checkinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp" />
+    
+    <TextView
+        android:id="@+id/tv_warehouse_checkinfo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/tv_warehouse_checkinfo"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/bg_warehouse_check1_edit"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_warehouse_checkinfo1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_login_submit"
+        android:gravity="center"
+        android:text="@string/main_warehouse_check_edit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16" />
+
+</RelativeLayout>

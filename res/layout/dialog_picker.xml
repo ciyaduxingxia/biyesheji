@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout
+        android:id="@+id/dialog_picker_ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dialog_picker_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/picker_pickerid"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/dialog_picker_et1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="32dp"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:hint="@string/picker_pickerid_hint"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="@dimen/font_10" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dialog_line1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/dialog_picker_ll1"
+        android:background="@color/devide_line" />
+
+    <LinearLayout
+        android:id="@+id/dialog_picker_ll2"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@id/dialog_line1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dialog_picker_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/picker_pickername"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/dialog_picker_et2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:hint="@string/picker_pickername_hint"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="@dimen/font_10" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dialog_line2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/dialog_picker_ll2"
+        android:background="@color/devide_line" />
+
+    <LinearLayout
+        android:id="@+id/dialog_picker_ll3"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@id/dialog_line2"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dialog_picker_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/picker_phone"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/dialog_picker_et3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:hint="@string/picker_phone_hint"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="@dimen/font_10" />
+    </LinearLayout>
+    
+    <View
+        android:id="@+id/dialog_line3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/dialog_picker_ll3"
+        android:background="@color/devide_line" />
+
+    <LinearLayout
+        android:id="@+id/dialog_picker_ll4"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@id/dialog_line3"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dialog_picker_tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/picker_belongdept"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/dialog_picker_et4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:hint="@string/picker_belongdept_hint"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="@dimen/font_10" />
+    </LinearLayout>
+
+</RelativeLayout>

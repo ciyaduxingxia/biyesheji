@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_pcorder"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/iv_pcorder_arrow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/iv_pcorder_arrow_back"
+            android:text="@string/main_outin_purchaseorder"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/div_tab_bar1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/rl_pcorder"
+        android:background="@color/black" />
+
+    <EditText
+        android:id="@+id/et_in_pcorder_pcorderID"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/div_tab_bar1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/main_outin_pcorder_pcorderID"
+        android:inputType="text" />
+
+    <Spinner
+        android:id="@+id/sp_in_pcorder_supplyID"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/et_in_pcorder_pcorderID"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:id="@+id/sp_in_pcorder_managerID"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/sp_in_pcorder_supplyID"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:id="@+id/et_in_pcorder_itemType"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/sp_in_pcorder_managerID"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:focusableInTouchMode="false"
+        android:hint="@string/main_outin_inboundorder_itemType"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/et_in_pcorder_itemName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/et_in_pcorder_itemType"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:focusableInTouchMode="false"
+        android:hint="@string/main_outin_pcorder_itemName"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/et_in_pcorder_count"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/et_in_pcorder_itemName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/main_outin_pcorder_count"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/et_in_pcorder_price"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/et_in_pcorder_count"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/main_outin_purchaseorder_price"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/et_in_pcorder_date"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/et_in_pcorder_price"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/main_outin_pcorder_date"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/bg_in_pcorder_summit"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/et_in_pcorder_date"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_login_submit"
+        android:gravity="center"
+        android:text="@string/main_outin_pcorder_submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16" />
+
+</RelativeLayout>

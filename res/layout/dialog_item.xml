@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout
+        android:id="@+id/dialog_item__ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dialog_item_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_itemid"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/dialog_item_et1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="32dp"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:hint="@string/item_itemid_hint"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="@dimen/font_10" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dialog_line1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/dialog_item__ll1"
+        android:background="@color/devide_line" />
+
+    <LinearLayout
+        android:id="@+id/dialog_item_ll2"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@id/dialog_line1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dialog_item_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_itemname"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/dialog_item_et2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:hint="@string/item_itemname_hint"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="@dimen/font_10" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dialog_line2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/dialog_item_ll2"
+        android:background="@color/devide_line" />
+
+    <LinearLayout
+        android:id="@+id/dialog_item_ll3"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@id/dialog_line2"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dialog_item_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_itemtype"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/dialog_item_et3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:hint="@string/item_itemtype_hint"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="@dimen/font_10" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dialog_line3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/dialog_item_ll3"
+        android:background="@color/devide_line" />
+
+    <LinearLayout
+        android:id="@+id/dialog_item_ll4"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@id/dialog_line3"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dialog_item_tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_count"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/dialog_item_et4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:hint="@string/item_count_hint"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="@dimen/font_10" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dialog_line4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/dialog_item_ll4"
+        android:background="@color/devide_line" />
+
+    <LinearLayout
+        android:id="@+id/dialog_item_ll5"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@id/dialog_line4"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dialog_item_tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_unit"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/dialog_item_et5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:hint="@string/item_unit_hint"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="@dimen/font_10" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dialog_line5"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/dialog_item_ll5"
+        android:background="@color/devide_line" />
+
+    <LinearLayout
+        android:id="@+id/dialog_item_ll6"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@id/dialog_line5"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dialog_item_tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_location"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/dialog_item_et6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:hint="@string/item_location_hint"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="@dimen/font_10" />
+    </LinearLayout>
+    
+    <View
+        android:id="@+id/dialog_line6"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/dialog_item_ll6"
+        android:background="@color/devide_line" />
+    
+    <LinearLayout
+        android:id="@+id/dialog_item_ll7"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@id/dialog_line6"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dialog_item_tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_price"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/dialog_item_et7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:hint="@string/item_price_hint"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="@dimen/font_10" />
+    </LinearLayout>
+    
+    <View
+        android:id="@+id/dialog_line7"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/dialog_item_ll7"
+        android:background="@color/devide_line" />
+    
+    <LinearLayout
+        android:id="@+id/dialog_item_ll8"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@id/dialog_line7"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dialog_item_tv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_upperlimit"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/dialog_item_et8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:hint="@string/item_upperlimit_hint"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="@dimen/font_10" />
+    </LinearLayout>
+    
+    <View
+        android:id="@+id/dialog_line8"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/dialog_item_ll8"
+        android:background="@color/devide_line" />
+    
+    <LinearLayout
+        android:id="@+id/dialog_item_ll9"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@id/dialog_line8"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dialog_item_tv9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_lowerlimit"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/dialog_item_et9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:hint="@string/item_lowerlimit_hint"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="@dimen/font_10" />
+    </LinearLayout>
+
+</RelativeLayout>

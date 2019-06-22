@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_mian"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RadioGroup
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_basic"
+            style="@style/tab_bar"
+            android:drawableTop="@drawable/main_basic"
+            android:text="@string/main_basic" />
+
+        <RadioButton
+            android:id="@+id/rb_outin"
+            style="@style/tab_bar"
+            android:drawableTop="@drawable/main_outin"
+            android:text="@string/main_outin" />
+
+        <RadioButton
+            android:id="@+id/rb_warehouse"
+            style="@style/tab_bar"
+            android:drawableTop="@drawable/main_warehouse"
+            android:text="@string/main_warehouse" />
+
+        <RadioButton
+            android:id="@+id/rb_query"
+            style="@style/tab_bar"
+            android:drawableTop="@drawable/main_query"
+            android:text="@string/main_query"/>
+        
+        <RadioButton
+            android:id="@+id/rb_me"
+            style="@style/tab_bar"
+            android:drawableTop="@drawable/main_me"
+            android:text="@string/main_me"/>
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/rg_tab_bar"
+        android:background="@color/white" />
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/div_tab_bar" >
+        
+    </FrameLayout>
+
+</RelativeLayout>
